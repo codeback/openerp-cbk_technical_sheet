@@ -1,4 +1,5 @@
-
+access_product_technical_specifications_employee,product.technical_specifications employee,model_product_technical_specifications,base.group_user,1,0,0,0
+access_product_technical_specifications_sale_manager,product.technical_specifications salemanager,model_product_technical_specifications,base.group_sale_manager,1,1,1,1
 
 
 
