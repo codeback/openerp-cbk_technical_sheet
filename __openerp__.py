@@ -29,7 +29,7 @@
     'description' : 'Module to add extra technical information to products',
     'website': 'http://codeback.es',
     'images': [],    
-    'depends': [],
+    'depends': ['product'],
     'category': 'Sales',
     'sequence': 23,
     'demo': [],
