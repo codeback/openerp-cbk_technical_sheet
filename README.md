@@ -1,4 +1,4 @@
-openerp-cbk_technical_sheet
+openerp-cbk_crm_information
 ===========================
 
-New tab in product containing technical specifications
+Summarized partner information for marketing purposes

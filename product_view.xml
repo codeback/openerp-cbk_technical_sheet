@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>        
+        <record id="view_product_form_technical_specification" model="ir.ui.view">
+            <field name="name">product.product.form.technical.specification</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="priority" eval="18"/>
+            <field name="arch" type="xml">              
+                <notebook position="inside">
+                    <page string="Product Sheet">           
+                        <group string="Features" colspan="4">
+                            <field name="product_technical_specifications_ids" string="Features">
+                                <tree string="Partner Tracking" editable="top">
+                                    <field name="specification"/>    
+                                </tree>  
+                            </field>
+                        </group>            
+                        <group string="Technical Data">          
+                            <field name="dimensions"/>
+                            <field name="weight"/>                           
+                        </group>                      
+                    </page>
+                </notebook>                           
+            </field> 
+        </record>   
+    </data>
+</openerp>
