@@ -18,7 +18,7 @@
                         </group>            
                         <group string="Technical Data">          
                             <field name="dimensions"/>
-                            <field name="weight"/>                           
+                            <field name="weight_sheet"/>                           
                         </group>                      
                     </page>
                 </notebook>                           
