@@ -1,5 +1,6 @@
-access_product_technical_specifications_employee,product.technical_specifications employee,model_product_technical_specifications,base.group_user,1,0,0,0
-access_product_technical_specifications_sale_manager,product.technical_specifications salemanager,model_product_technical_specifications,base.group_sale_manager,1,1,1,1
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_technical_specifications_employee,product.technical.specifications.employee,model_product_technical_specifications,base.group_user,1,1,1,1
+access_product_technical_specifications_salemanager,product.technical.specifications.salemanager,model_product_technical_specifications,base.group_sale_manager,1,1,1,1
 
 
 

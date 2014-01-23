@@ -33,7 +33,7 @@ class product_product(osv.osv):
     _columns = {        
         'product_technical_specifications_ids' : fields.one2many('product.technical.specifications', 'product_id', string="Technical Specifications"),        
         'dimensions': fields.char('Dimensions'),
-        'weight': fields.char('Weight'),
+        'weight_sheet': fields.char('Weight'),
     }
     
 class product_technical_specifications (osv.osv):
