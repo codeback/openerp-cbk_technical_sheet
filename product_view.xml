@@ -8,7 +8,10 @@
             <field name="priority" eval="18"/>
             <field name="arch" type="xml">              
                 <notebook position="inside">
-                    <page string="Product Sheet">           
+                    <page string="Product Sheet"> 
+                        <group string="Description">
+                            <field name="description_sheet"/>
+                        </group>     
                         <group string="Features" colspan="4">
                             <field name="product_technical_specifications_ids" string="Features">
                                 <tree string="Partner Tracking" editable="top">
@@ -16,9 +19,23 @@
                                 </tree>  
                             </field>
                         </group>            
+                        <group string="Components">          
+                            <field name="base_sheet"/>
+                            <field name="gas_sheet"/>
+                            <field name="wheels_sheet"/>                           
+                        </group>
+                        <group string="Interiors">          
+                            <field name="seat_sheet"/>
+                            <field name="back_sheet"/>
+                        </group>
                         <group string="Technical Data">          
-                            <field name="dimensions"/>
-                            <field name="weight_sheet"/>                           
+                            <field name="dimensions_sheet"/>
+                            <field name="weight_sheet"/>
+                            <field name="finishes_sheet"/>
+                            <field name="size_sheet"/>
+                            <field name="box_size_sheet"/>
+                            <field name="box_volume_sheet"/>
+                            <field name="min_purchase_sheet"/>
                         </group>                      
                     </page>
                 </notebook>                           
