@@ -33,18 +33,22 @@ class product_product(osv.osv):
     _columns = {        
         'product_technical_specifications_ids' : fields.one2many('product.technical.specifications', 'product_id', string="Technical Specifications"),        
         'description_sheet': fields.char('Description'),
-        'dimensions_sheet': fields.char('Dimensions'),
-        'weight_sheet': fields.char('Weight'),
+        'structure_sheet': fields.char('Structure'),
+        'dimensions_sheet': fields.char('Dimensions (height x width x depth)'),
+        'weight_sheet': fields.float('Weight (kg)'),
         'base_sheet': fields.char('Base'),
         'gas_sheet': fields.char('Gas'),
         'wheels_sheet': fields.char('Wheels'),
-        'seat_sheet': fields.char('Seat'),
-        'back_sheet':fields.char('Back of the chair'),
+        'seat_interior_sheet': fields.char('Seat'),
+        'back_interior_sheet':fields.char('Back of the chair'),
+        'seat_exterior_sheet': fields.char('Seat'),
+        'back_exterior_sheet':fields.char('Back of the chair'),
+        'mechanism_sheet':fields.char('Mechanism'),
         'finishes_sheet': fields.char('Product finishes'),
-        'size_sheet': fields.char('Size (m2)'),
-        'box_size_sheet': fields.char('Box size'),
-        'min_purchase_sheet': fields.char('Minimum purchase'),
-        'box_volume_sheet': fields.char('Box volume (m3)')
+        'size_sheet': fields.float('Size (m2)'),
+        'box_size_sheet': fields.char('Box size (height x width x depth)'),
+        'min_purchase_sheet': fields.integer('Minimum purchase'),
+        'box_volume_sheet': fields.float('Box volume (m3)')
     }
     
 class product_technical_specifications (osv.osv):

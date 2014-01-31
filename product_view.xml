@@ -19,14 +19,24 @@
                                 </tree>  
                             </field>
                         </group>            
+                        <group string="Structure">          
+                            <field name="structure_sheet"/>                   
+                        </group>
                         <group string="Components">          
                             <field name="base_sheet"/>
                             <field name="gas_sheet"/>
                             <field name="wheels_sheet"/>                           
                         </group>
+                        <group string="Exteriors">          
+                            <field name="seat_exterior_sheet"/>
+                            <field name="back_exterior_sheet"/>
+                        </group>
                         <group string="Interiors">          
-                            <field name="seat_sheet"/>
-                            <field name="back_sheet"/>
+                            <field name="seat_interior_sheet"/>
+                            <field name="back_interior_sheet"/>
+                        </group>
+                        <group string="Mechanism">          
+                            <field name="mechanism_sheet"/>                   
                         </group>
                         <group string="Technical Data">          
                             <field name="dimensions_sheet"/>
